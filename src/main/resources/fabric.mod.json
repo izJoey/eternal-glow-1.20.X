@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "eternal-glow",
+    "version": "${version}",
+    "name": "Eternal Glow",
+    "description": "A Simple Fabric Mod that makes a player glow forever.",
+    "authors": ["Joey"],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "MIT",
+    "icon": "assets/eternal-glow/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": ["net.joey.eternalglow.EternalGlow"],
+        "client": ["net.joey.eternalglow.EternalGlowClient"],
+        "fabric-datagen": ["net.joey.eternalglow.EternalGlowDataGenerator"]
+    },
+    "mixins": ["eternal-glow.mixins.json"],
+    "depends": {
+        "fabricloader": ">=0.14.21",
+        "minecraft": "~1.20.1",
+        "java": ">=17",
+        "fabric-api": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
